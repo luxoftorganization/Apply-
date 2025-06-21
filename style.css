@@ -1,10 +1,74 @@
-body {font-family: Arial; margin: 0; background: #f3f0f8;}
-header {background: #4B0082; color: white; text-align: center; padding: 20px;}
-.logo {width: 120px;} .btn {background: white; color: #4B0082; padding: 10px 20px; margin: 15px; text-decoration: none;}
-.images {display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; padding: 20px;}
-.images img {width: 200px; height: auto; border-radius: 8px;}
-.info {display: flex; justify-content: space-around; padding: 20px;}
-form {display: flex; flex-direction: column;} input, button {margin: 10px 0; padding: 10px;}
-footer {background: #eee; text-align: center; padding: 10px;}
-.thank-you {text-align: center; margin-top: 100px;}
-.form-container {padding: 20px; max-width: 600px; margin: auto; background: white; border-radius: 10px;}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f0ff;
+  color: #333;
+  margin: 0;
+}
+.hero {
+  background-color: #6a0dad;
+  color: white;
+  padding: 2em;
+  text-align: center;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  font-size: 2.8em;
+  font-weight: bold;
+}
+.slogan {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  font-style: italic;
+}
+.hero-text h2 {
+  margin-top: 20px;
+  font-size: 2em;
+}
+.hero-text p {
+  font-size: 1.2em;
+}
+.info {
+  padding: 2em;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  padding: 10px 0;
+  font-size: 1.1em;
+}
+.banner-img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 1.5em;
+  border-radius: 12px;
+}
+.application {
+  padding: 2em;
+  background: #ece0f8;
+}
+input, button {
+  display: block;
+  margin: 10px 0;
+  padding: 12px;
+  width: 100%;
+  max-width: 500px;
+}
+button {
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+}
