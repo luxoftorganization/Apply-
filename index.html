@@ -38,38 +38,24 @@
         .logo-placeholder {
             width: 180px;
             height: 60px;
-            background-color: rgba(255,255,255,0.9);
-            border: 2px dashed #ccc;
             margin: 0 auto 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-style: italic;
-            color: #666;
-            border-radius: 8px;
-            transition: transform 0.3s ease, border-color 0.3s ease;
         }
-        .logo-placeholder:hover {
-            transform: scale(1.05);
-            border-color: #b19cd9;
+        .logo-placeholder img {
+            max-width: 100%;
+            height: auto;
         }
         .profile-picture {
             width: 150px;
             height: 150px;
-            background-color: rgba(255,255,255,0.9);
-            border: 2px dashed #ccc;
             margin: 1rem auto;
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-style: italic;
-            color: #666;
-            transition: transform 0.3s ease, border-color 0.3s ease;
+            overflow: hidden;
         }
-        .profile-picture:hover {
-            transform: scale(1.05);
-            border-color: #b19cd9;
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
         }
         h1 {
             font-size: 2.5rem;
@@ -167,23 +153,27 @@
 </head>
 <body>
     <header>
-        <div class="logo-placeholder">luxoft-logo.png(e.g., <img src="logo.png" alt="Luxoft Logo" style="max-width:100%; height:auto;">)</div>
-        <div class="profile-picture">mike-andrew.jpg(e.g., <img src="profile.jpg" alt="Profile Picture" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">)</div>
+        <div class="logo-placeholder">
+            <img src="logo.png" alt="Luxoft Logo">
+        </div>
+        <div class="profile-picture">
+            <img src="mike-andrew.jpg" alt="Mike Andrew Profile Picture">
+        </div>
         <h1>Mike Andrew</h1>
         <h2>Head Recruiter at Luxoft</h2>
     </header>
 
     <section id="about">
         <h3>About Me</h3>
-        <p>As the Head Recruiter at Luxoft, a global leader in IT services, I spearhead talent acquisition strategies to build exceptional teams in software development, engineering, and digital transformation. With [X] years of recruitment experience, I excel in connecting top talent with innovative projects in industries like finance, automotive, and telecom.</p>
+        <p>As the Head Recruiter at Luxoft, a global leader in IT services, I spearhead talent acquisition strategies to build exceptional teams in software development, engineering, and digital transformation. With 15+ years of recruitment experience, I excel in connecting top talent with innovative projects in industries like finance, automotive, and telecom.</p>
     </section>
 
     <section id="experience">
         <h3>Professional Experience</h3>
         <ul>
-            <li><strong>Head Recruiter, Luxoft</strong> - [Febuary 4 2011] to Present: Lead global recruitment, leveraging AI-driven sourcing and diversity initiatives to build high-performing teams.</li>
-            <li><strong>Senior Recruiter, [Orion Innovation]</strong> - [2015-2023]: Streamlined hiring processes for tech roles, achieving [e.g., 30% reduction in time-to-hire].</li>
-            <li><strong>Recruitment Specialist, [Internal Revenue Service]</strong> - [2007 to Date]: Specialized in campus recruitment and executive search.</li>
+            <li><strong>Head Recruiter, Luxoft</strong> – Feb 2011 to Present: Lead global recruitment, leveraging AI-driven sourcing and diversity initiatives to build high-performing teams.</li>
+            <li><strong>Senior Recruiter, Orion Innovation</strong> – 2015 to 2023: Streamlined hiring processes for tech roles, achieving a 30% reduction in time-to-hire.</li>
+            <li><strong>Recruitment Specialist, Internal Revenue Service</strong> – 2007 to 2011: Specialized in campus recruitment and executive search.</li>
         </ul>
     </section>
 
@@ -201,14 +191,14 @@
 
     <section id="contact" class="contact-links">
         <h3>Contact</h3>
-        <p>Email: <a href="mailto:[your.email@luxoft.com]">[Mikeandrew@luxoft.com]</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/[yourusername]" target="_blank">[Mike andrew]</a></p>
-        <p>Phone: [(480) 559-8731]</p>
-        <a href="mailto:[mikeandrew2777@gmail.com]" class="button">Get in Touch</a>
+        <p>Email: <a href="mailto:mikeandrew@luxoft.com">mikeandrew@luxoft.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mikeandrew" target="_blank">Mike Andrew</a></p>
+        <p>Phone: (480) 559-8731</p>
+        <a href="mailto:mikeandrew2777@gmail.com" class="button">Get in Touch</a>
     </section>
 
     <footer>
-        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+        <p>&copy; 2025 Mike Andrew. All rights reserved.</p>
     </footer>
 </body>
 </html>
