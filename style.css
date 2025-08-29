@@ -1,0 +1,183 @@
+/* === Base Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #2c1b47, #4b367c);
+  color: #e0e0e0;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* === Header === */
+header {
+  background: linear-gradient(90deg, #3f2a6b, #6a4b9e);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1), transparent);
+  opacity: 0.3;
+}
+
+/* === Logo & Profile === */
+.logo-placeholder img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.logo-placeholder:hover img {
+  transform: scale(1.05);
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  margin: 1rem auto;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-picture:hover {
+  transform: scale(1.1);
+}
+
+/* === Headings === */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #d0d0d0;
+}
+
+/* === Sections === */
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #2a1b47;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+}
+
+/* === Subheadings === */
+h3 {
+  color: #b19cd9;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #6a4b9e;
+  padding-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+h3:hover {
+  color: #ffffff;
+}
+
+/* === Lists & Skills === */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #3f2a6b;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+ul li:hover {
+  background: #4b367c;
+  transform: translateX(5px);
+}
+
+/* === Contact Links === */
+.contact-links a {
+  color: #b19cd9;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* === Button === */
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #6a4b9e;
+  color: #ffffff;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background: #4b367c;
+  transform: scale(1.1);
+}
+
+/* === Footer === */
+footer {
+  background: #3f2a6b;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  section { margin: 1rem; padding: 1.5rem; }
+  .profile-picture { width: 120px; height: 120px; }
+}
