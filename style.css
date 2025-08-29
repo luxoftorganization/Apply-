@@ -34,11 +34,16 @@ header::before {
   opacity: 0.3;
 }
 
-/* === Logo & Profile === */
 .logo-placeholder img {
-  max-width: 100%;
+  width: 400px;
   height: auto;
+  margin: 0 auto 2rem;
+  text-align: center;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.logo-placeholder img {
   transition: transform 0.3s ease;
 }
 
